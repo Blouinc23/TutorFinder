@@ -57,16 +57,11 @@ import gspread
 Dir=ob.Directoy(Dir=os.getcwd())
 Dir.directory_test()
 sheet=ob.GoogleSheet('Tutor Sheet')
-print(sheet.Sheetlist[1])
-Val=ob.loadTutor('Val','White')
-Val.update_email('test@gmail.com')
-Val.sheet_update(sheet)
+print(sheet.Sheetlist)
+print(sheet.Sheetlist[2].get_all_values())
 
-print('this is a test')
 
-print('this is also a test')
 
-print('this is a new test on the laptop')
 # Str=ob.hourConversion(1115)
 # print(Str)
 
