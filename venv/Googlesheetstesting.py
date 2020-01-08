@@ -14,9 +14,11 @@ print(ColumnNumber)
 print(test[1:][1])
 loc=test[0].index('Writing')
 print(loc)
-print(sheet.col_values(1))
-sheet.ad
-print(sheet.cell(3,1).value)
+headers=sheet.row_values(1)
+print(headers)
+print(headers.index('General Math'))
+sheet.add_cols(1)
+
 #test[row][column]
 
 

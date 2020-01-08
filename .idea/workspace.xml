@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="58023097-da9e-40c0-9084-32ccde338916" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Googlesheetstesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Googlesheetstesting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Objects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/TestingStuff.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/TestingStuff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Tutors/Chris Blouin" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Tutors/Chris Blouin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +22,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1VYUKS7JZyf26bBM4IvMRnH1toX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -29,10 +34,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
   </component>
-  <component name="RunManager" selected="Python.TestingStuff">
-    <configuration name="Googlesheetstesting (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.TestingStuff (1)">
+    <configuration name="Googlesheetstesting (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TutorFinder" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -53,7 +58,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Googlesheetstesting" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Objects (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TutorFinder" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -65,7 +70,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/Googlesheetstesting.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/Objects.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -95,7 +100,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python Console" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="TestingStuff (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TutorFinder" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -103,11 +108,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="/Python Console" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/TestingStuff.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TestingStuff (1)" />
+        <item itemvalue="Python.Objects (1)" />
+        <item itemvalue="Python.Googlesheetstesting (2)" />
         <item itemvalue="Python.TestingStuff" />
         <item itemvalue="Python.Objects" />
-        <item itemvalue="Python.Python Console" />
-        <item itemvalue="Python.Googlesheetstesting (1)" />
-        <item itemvalue="Python.Googlesheetstesting" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578448498360</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1/7/2020">
+      <created>1578520350079</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578520350079</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -200,10 +212,14 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="785" y="360" key="#com.intellij.fileTypes.FileTypeChooser/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1577673934770" />
-    <state x="680" y="151" key="CommitChangelistDialog2" timestamp="1578448497665">
+    <state x="680" y="151" key="CommitChangelistDialog2" timestamp="1578520349233">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="680" y="151" key="CommitChangelistDialog2/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578448497665" />
+    <state x="680" y="151" key="CommitChangelistDialog2/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578520349233" />
+    <state x="93" y="93" width="1862" height="926" key="DiffContextDialog" timestamp="1578520535205">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="93" y="93" width="1862" height="926" key="DiffContextDialog/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578520535205" />
     <state x="805" y="312" key="FileChooserDialogImpl" timestamp="1578447272460">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -212,26 +228,30 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="859" y="473" width="630" height="317" key="Github.CreateGistDialog/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578447292707" />
-    <state width="2027" height="152" key="GridCell.Tab.0.bottom" timestamp="1578448905865">
+    <state width="2027" height="154" key="GridCell.Tab.0.bottom" timestamp="1578523308153">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="152" key="GridCell.Tab.0.bottom/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578448905865" />
-    <state width="2027" height="152" key="GridCell.Tab.0.center" timestamp="1578448905865">
+    <state width="2027" height="154" key="GridCell.Tab.0.bottom/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578523308153" />
+    <state width="2027" height="154" key="GridCell.Tab.0.center" timestamp="1578523308153">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="152" key="GridCell.Tab.0.center/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578448905865" />
-    <state width="2027" height="152" key="GridCell.Tab.0.left" timestamp="1578448905865">
+    <state width="2027" height="154" key="GridCell.Tab.0.center/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578523308153" />
+    <state width="2027" height="154" key="GridCell.Tab.0.left" timestamp="1578523308153">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="152" key="GridCell.Tab.0.left/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578448905865" />
-    <state width="2027" height="152" key="GridCell.Tab.0.right" timestamp="1578448905865">
+    <state width="2027" height="154" key="GridCell.Tab.0.left/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578523308153" />
+    <state width="2027" height="154" key="GridCell.Tab.0.right" timestamp="1578523308153">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="152" key="GridCell.Tab.0.right/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578448905865" />
-    <state x="533" y="199" key="SettingsEditor" timestamp="1578520329693">
+    <state width="2027" height="154" key="GridCell.Tab.0.right/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578523308153" />
+    <state x="737" y="273" key="MultipleFileMergeDialog" timestamp="1578520547504">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="533" y="199" key="SettingsEditor/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578520329693" />
+    <state x="737" y="273" key="MultipleFileMergeDialog/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578520547504" />
+    <state x="533" y="199" key="SettingsEditor" timestamp="1578520414135">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="533" y="199" key="SettingsEditor/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578520414135" />
     <state x="874" y="473" key="VCS.ChangelistChooser" timestamp="1578448327209">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -240,10 +260,18 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="617" y="290" key="Vcs.Push.Dialog.v2/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578448499395" />
-    <state x="2827" y="-16" width="1758" height="1134" maximized="true" key="dock-window-1" timestamp="1578520330165">
+    <state x="794" y="291" key="VcsDiffUtil.ChangesDialog" timestamp="1578520470040">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="794" y="291" key="VcsDiffUtil.ChangesDialog/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578520470040" />
+    <state x="834" y="474" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578520535195">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="834" y="474" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578520535195" />
+    <state x="2536" y="-12" width="1096" height="918" maximized="true" key="dock-window-1" timestamp="1578523206906">
       <screen x="2560" y="0" width="1080" height="1870" />
     </state>
-    <state x="2827" y="-16" width="1758" height="1134" maximized="true" key="dock-window-1/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578520330165" />
+    <state x="2536" y="-12" width="1096" height="918" maximized="true" key="dock-window-1/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578523206906" />
     <state x="2735" y="85" width="1096" height="918" key="dock-window-2" timestamp="1577680991565">
       <screen x="2560" y="0" width="1080" height="1870" />
     </state>

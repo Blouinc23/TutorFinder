@@ -93,6 +93,9 @@ class Tutor(object):
     def update_avail(self,NewAvail):
         self.Avail=NewAvail
         self.update_database()
+    def update_email(self,NewEmail):
+        self.Email=NewEmail
+        self.update_database()
     def update_database(self):
         FileName = TutorDir+ str(self.FirstName) + str(' ' + self.LastName)
         File = open(FileName, 'wb')
@@ -106,6 +109,7 @@ class Tutor(object):
         pass
     def update_email(self,NewEmail):
         self.Email=NewEmail
+        self.update_database()
     def sheet_update(self,Sheet):
         ##Sheet 1 will be name and email
         ##Sheet 2 will be name and availability
@@ -118,7 +122,8 @@ class Tutor(object):
 
         #This is updating the Availability Chart
         S2Size = len(Sheet.Sheetlist[1].get_all_values())
-        Days=['M','Tu','W','Th','Fr','Sa','Su']
+        Days=['M','Tu','W']
+        #Days = ['M', 'Tu', 'W', 'Th', 'Fr', 'Sa', 'Su']
         StrSet=[]
         for i in range(len(Days)):
             if self.Avail[Days[i]]['Start']!='Un' and self.Avail[Days[i]]['End']!='Un':
@@ -129,19 +134,21 @@ class Tutor(object):
         Sheet.Sheetlist[1].insert_row(S2Vals, S2Size + 1)
 
         #This is updating the subject list
+        Name = self.FirstName + ' ' + self.LastName
         for subject in self.Subjects:
             SheetVals=Sheet.Sheetlist[2].get_all_values()
-            if subject in SheetVals:
-                subjectLocation=SheetVals[0].index(subject)
+            SubjectHeaders=Sheet.Sheetlist[2].row_values(1)
+            if subject in SubjectHeaders:
+                subjectLocation=SubjectHeaders.index(subject)
                 subjectLocationCol=subjectLocation+1
-                Name=self.FirstName + ' ' + self.LastName
                 if Name in Sheet.Sheetlist[2].col_values(subjectLocationCol):
-                    pass
+                    break
                 else:
                     Sheet.Sheetlist[2].update_cell(len(Sheet.Sheetlist[2].col_values(subjectLocationCol))+1,subjectLocationCol,Name)
             else:
-                endLocation=len(SheetVals[0])
-                Sheet.Sheetlist[2].add_cols(subject)
+                Sheet.Sheetlist[2].add_cols(1)
+                Sheet.Sheetlist[2].update_cell(1,len(Sheet.Sheetlist[2].row_values(1))+1,subject)
+                Sheet.Sheetlist[2].update_cell(2,len(Sheet.Sheetlist[2].row_values(1)),Name)
 
                 # for i in range(len(Sheet.Sheetlist[2].col_values(subjectLocationCol))):
                 #     Sheet.Sheetlist[2].cell(i,subjectLocationCol)
