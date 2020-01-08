@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58023097-da9e-40c0-9084-32ccde338916" name="Default Changelist" comment="" />
+    <list default="true" id="58023097-da9e-40c0-9084-32ccde338916" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/TestingStuff.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/TestingStuff.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Git/ValsProject" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1VYUKS7JZyf26bBM4IvMRnH1toX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -188,26 +192,30 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="859" y="473" width="630" height="317" key="Github.CreateGistDialog/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578447292707" />
-    <state width="2027" height="152" key="GridCell.Tab.0.bottom" timestamp="1578179342416">
+    <state width="2027" height="152" key="GridCell.Tab.0.bottom" timestamp="1578448298257">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="152" key="GridCell.Tab.0.bottom/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578179342416" />
-    <state width="2027" height="152" key="GridCell.Tab.0.center" timestamp="1578179342415">
+    <state width="2027" height="152" key="GridCell.Tab.0.bottom/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578448298257" />
+    <state width="2027" height="152" key="GridCell.Tab.0.center" timestamp="1578448298257">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="152" key="GridCell.Tab.0.center/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578179342415" />
-    <state width="2027" height="152" key="GridCell.Tab.0.left" timestamp="1578179342415">
+    <state width="2027" height="152" key="GridCell.Tab.0.center/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578448298257" />
+    <state width="2027" height="152" key="GridCell.Tab.0.left" timestamp="1578448298256">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="152" key="GridCell.Tab.0.left/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578179342415" />
-    <state width="2027" height="152" key="GridCell.Tab.0.right" timestamp="1578179342416">
+    <state width="2027" height="152" key="GridCell.Tab.0.left/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578448298256" />
+    <state width="2027" height="152" key="GridCell.Tab.0.right" timestamp="1578448298257">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="152" key="GridCell.Tab.0.right/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578179342416" />
+    <state width="2027" height="152" key="GridCell.Tab.0.right/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578448298257" />
     <state x="533" y="199" key="SettingsEditor" timestamp="1578447736581">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="533" y="199" key="SettingsEditor/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578447736581" />
+    <state x="874" y="473" key="VCS.ChangelistChooser" timestamp="1578448327209">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="874" y="473" key="VCS.ChangelistChooser/2560.0.1080.1870/0.0.2048.1112@0.0.2048.1112" timestamp="1578448327209" />
     <state x="2151" y="-25" width="1758" height="917" key="dock-window-1" timestamp="1578447441605">
       <screen x="2560" y="0" width="1080" height="1870" />
     </state>
