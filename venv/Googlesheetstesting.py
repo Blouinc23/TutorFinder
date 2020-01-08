@@ -11,7 +11,13 @@ test=sheet.get_all_values()
 print(test[0][0])
 ColumnNumber=len(test[0])
 print(ColumnNumber)
-print(test[0].index('Calculus'))
+print(test[1:][1])
+loc=test[0].index('Writing')
+print(loc)
+print(sheet.col_values(1))
+sheet.ad
+print(sheet.cell(3,1).value)
+#test[row][column]
 
 
 
