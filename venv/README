@@ -1,0 +1,16 @@
+Class: Tutor notes
+    Name should be the first and last name, no middle initial
+
+    Subjects will be capatalized possible options can include: FILL THIS IN LATER
+        For now we will use: Geometry, English, Spanish, History
+
+    Avail is formatted as a list with entry 0 being M (monday) and entry 6 being Su (sunday)
+        Everything should be formatted in 24 hour clock style such that this is easier to code. I will try to make it such that this isn't used in the GUI
+        If the start or stop times respond with unavailable then they are unavailable for the entire day
+            Example:
+            M:4pm-6pm Tu:5:30pm-8:30pm W:Unavailable Etc.
+            Avail={'M':{'Start':1600,'End':1800},'Tu':{'Start':1730,'End':2030}, 'W':{'Start':'Un','End':'Un'} Etc....}
+            Then, if I wanted to, say, get this tutors Tuesday Start time it would be
+            Avail['Tu']['Start']
+
+    Sessions will be dealt with at a later time
