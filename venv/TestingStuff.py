@@ -57,14 +57,8 @@ import gspread
 Dir=ob.Directoy(Dir=os.getcwd())
 Dir.directory_test()
 sheet=ob.GoogleSheet('Tutor Sheet')
-print(sheet.Sheetlist[1])
-Val=ob.loadTutor('Val','White')
-Val.update_email('test@gmail.com')
-Val.sheet_update(sheet)
-
-print('this is a test')
-
-print('this is also a test')
+print(sheet.Sheetlist)
+print(sheet.Sheetlist[2].get_all_values())
 
 
 

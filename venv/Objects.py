@@ -110,10 +110,13 @@ class Tutor(object):
         ##Sheet 1 will be name and email
         ##Sheet 2 will be name and availability
         ##Sheet 3 will be name and subjects
+
+        #This is updating the name and email list
         S1Size=len(Sheet.Sheetlist[0].get_all_values())
         S1Vals=[self.FirstName+' ' + self.LastName,self.Email]
         Sheet.Sheetlist[0].insert_row(S1Vals,S1Size+1)
 
+        #This is updating the Availability Chart
         S2Size = len(Sheet.Sheetlist[1].get_all_values())
         Days=['M','Tu','W','Th','Fr','Sa','Su']
         StrSet=[]
@@ -123,8 +126,26 @@ class Tutor(object):
             else:
                 StrSet.append('Unavailable')
         S2Vals = [self.FirstName+' ' + self.LastName, StrSet[0],StrSet[1],StrSet[2]]
-        print(S2Vals)
         Sheet.Sheetlist[1].insert_row(S2Vals, S2Size + 1)
+
+        #This is updating the subject list
+        for subject in self.Subjects:
+            SheetVals=Sheet.Sheetlist[2].get_all_values()
+            if subject in SheetVals:
+                subjectLocation=SheetVals[0].index(subject)
+                subjectLocationCol=subjectLocation+1
+                Name=self.FirstName + ' ' + self.LastName
+                if Name in Sheet.Sheetlist[2].col_values(subjectLocationCol):
+                    pass
+                else:
+                    Sheet.Sheetlist[2].update_cell(len(Sheet.Sheetlist[2].col_values(subjectLocationCol))+1,subjectLocationCol,Name)
+            else:
+                endLocation=len(SheetVals[0])
+                Sheet.Sheetlist[2].add_cols(subject)
+
+                # for i in range(len(Sheet.Sheetlist[2].col_values(subjectLocationCol))):
+                #     Sheet.Sheetlist[2].cell(i,subjectLocationCol)
+
 
 class Tutors(object):
     def __init__(self):
