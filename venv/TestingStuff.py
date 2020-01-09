@@ -53,14 +53,23 @@ import gspread
 #     print(i)
 #     StrSet.append(str(Val.Avail[Days[i]]['Start'])+'-'+str(Val.Avail[Days[i]]['End']))
 # print(StrSet)
+#
+# Dir=ob.Directoy(Dir=os.getcwd())
+# Dir.directory_test()
+# sheet=ob.GoogleSheet('Tutor Sheet')
+#
+# Chris=ob.loadTutor('Chris','Blouin')
+# Chris.update_email('blouinc23@gmail.com')
+# Chris.sheet_update(sheet)
 
+sheetstudents=ob.GoogleSheet('Student Sheet')
 Dir=ob.Directoy(Dir=os.getcwd())
 Dir.directory_test()
-sheet=ob.GoogleSheet('Tutor Sheet')
-Chris=ob.loadTutor('Chris','Blouin')
-Chris.update_email('blouinc23@gmail.com')
-Chris.sheet_update(sheet)
-
+Caleb=ob.loadStudent('Caleb','Shomo')
+Caleb.update_name('Micheal','Shomo')
+Caleb.update_grade('10th')
+Caleb.update_birthday('6/26/2002')
+Caleb.update_sheet(sheetstudents)
 
 
 # Str=ob.hourConversion(1115)

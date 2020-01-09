@@ -126,8 +126,7 @@ class Tutor(object):
 
         #This is updating the Availability Chart
         S2Size = len(Sheet.Sheetlist[1].get_all_values())
-        Days=['M','Tu','W']
-        #Days = ['M', 'Tu', 'W', 'Th', 'Fr', 'Sa', 'Su']
+        Days = ['M', 'Tu', 'W', 'Th', 'Fr', 'Sa', 'Su']
         StrSet=[]
         if Name in Sheet.Sheetlist[1].col_values(1):
             pass
@@ -184,13 +183,40 @@ class Tutors(object):
 
 
 class Student(object):
-    def __init__(self,FirstName,LastName):
+    def __init__(self,FirstName,LastName,Birthday,Grade,ParentPhone):
         self.FirstName=FirstName
         self.LastName = LastName
+        self.Birthday=Birthday
+        self.Grade=Grade
+        self.ParentPhone=ParentPhone
+        self.PhoneNumbers=[]
+        self.PhoneNumberLabel=[]
+        self.PhoneNumbers.append(self.ParentPhone)
+        self.PhoneNumberLabel.append('Parent Phone')
+        self.Phones=[self.PhoneNumberLabel,self.PhoneNumbers]
         self.update_database()
+        self.EmailList=[]
+        self.EmailNames=[]
+        self.Emails=[self.EmailNames,self.EmailList]
     def update_name(self,FirstNameNew,LastNameNew):
         self.FirstName = FirstNameNew
         self.LastName = LastNameNew
+        self.update_database()
+    def update_grade(self,grade):
+        self.Grade=grade
+        self.update_database()
+    def update_birthday(self,bday):
+        self.Birthday=bday
+        self.update_database()
+    def add_phone(self,number,name):
+        self.PhoneNumbers.append(number)
+        self.PhoneNumberLabel.append('Parent Phone')
+        self.Phones = [self.PhoneNumberLabel, self.PhoneNumbers]
+        self.update_database()
+    def add_email(self,email,name):
+        self.EmailList.append(email)
+        self.EmailNames.append(name)
+        self.Emails = [self.EmailNames, self.EmailList]
         self.update_database()
     def del_student(self):
         FileName = StudentDir + str(self.FirstName) + str(' ' + self.LastName)
@@ -200,7 +226,17 @@ class Student(object):
         FileName =StudentDir + str(self.FirstName) + str(' ' + self.LastName)
         File = open(FileName, 'wb')
         pickle.dump(self, File)
-
+    def update_sheet(self,Sheet):
+        Name=self.FirstName+' '+self.LastName
+        GradeLoc=Sheet.Sheetlist[0].row_values(1).index('Grade')+1
+        BirthdayLoc=Sheet.Sheetlist[0].row_values(1).index('Birthday')+1
+        if Name in Sheet.Sheetlist[0].col_values(1):
+            RowLoc=Sheet.Sheetlist[0].col_values(1).index(Name)+1
+            Sheet.Sheetlist[0].update_cell(RowLoc,GradeLoc,self.Grade)
+            Sheet.Sheetlist[0].update_cell(RowLoc,BirthdayLoc,self.Birthday)
+        else:
+            Vals=[Name,self.Grade,self.Birthday]
+            Sheet.Sheetlist[0].append_row(Vals)
 
 
 def loadStudent(FirstName,LastName):

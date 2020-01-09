@@ -17,7 +17,7 @@ print(loc)
 headers=sheet.row_values(1)
 print(headers)
 print(headers.index('General Math'))
-sheet.add_cols(1)
+sheet.up
 
 #test[row][column]
 
