@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58023097-da9e-40c0-9084-32ccde338916" name="Default Changelist" comment="">
+    <list default="true" id="58023097-da9e-40c0-9084-32ccde338916" name="Default Changelist" comment="This is on the laptop 1/8. Made changes to subject sheet update method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Googlesheetstesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Googlesheetstesting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/Objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Objects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/TestingStuff.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/TestingStuff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Tutors/Chris Blouin" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Tutors/Chris Blouin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +33,19 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
   </component>
-  <component name="RunManager" selected="Python.TestingStuff (1)">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.TestingStuff">
     <configuration name="Googlesheetstesting (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TutorFinder" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,25 +153,13 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TestingStuff" />
+        <item itemvalue="Python.Objects" />
         <item itemvalue="Python.TestingStuff (1)" />
         <item itemvalue="Python.Objects (1)" />
         <item itemvalue="Python.Googlesheetstesting (2)" />
-        <item itemvalue="Python.TestingStuff" />
-        <item itemvalue="Python.Objects" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\mrmin\AppData\Roaming\Subversion</configuration>
@@ -198,6 +195,17 @@
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>

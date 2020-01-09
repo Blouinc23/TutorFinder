@@ -116,25 +116,31 @@ class Tutor(object):
         ##Sheet 3 will be name and subjects
 
         #This is updating the name and email list
+        Name = self.FirstName + ' ' + self.LastName
         S1Size=len(Sheet.Sheetlist[0].get_all_values())
         S1Vals=[self.FirstName+' ' + self.LastName,self.Email]
-        Sheet.Sheetlist[0].insert_row(S1Vals,S1Size+1)
+        if Name in Sheet.Sheetlist[0].col_values(1) and self.Email in Sheet.Sheetlist[0].col_values(2):
+            pass
+        else:
+            Sheet.Sheetlist[0].insert_row(S1Vals,S1Size+1)
 
         #This is updating the Availability Chart
         S2Size = len(Sheet.Sheetlist[1].get_all_values())
         Days=['M','Tu','W']
         #Days = ['M', 'Tu', 'W', 'Th', 'Fr', 'Sa', 'Su']
         StrSet=[]
-        for i in range(len(Days)):
-            if self.Avail[Days[i]]['Start']!='Un' and self.Avail[Days[i]]['End']!='Un':
-                StrSet.append(hourConversion(str(self.Avail[Days[i]]['Start'])) + '-' + hourConversion(str(self.Avail[Days[i]]['End'])))
-            else:
-                StrSet.append('Unavailable')
-        S2Vals = [self.FirstName+' ' + self.LastName, StrSet[0],StrSet[1],StrSet[2]]
-        Sheet.Sheetlist[1].insert_row(S2Vals, S2Size + 1)
+        if Name in Sheet.Sheetlist[1].col_values(1):
+            pass
+        else:
+            for i in range(len(Days)):
+                if self.Avail[Days[i]]['Start']!='Un' and self.Avail[Days[i]]['End']!='Un':
+                    StrSet.append(hourConversion(str(self.Avail[Days[i]]['Start'])) + '-' + hourConversion(str(self.Avail[Days[i]]['End'])))
+                else:
+                    StrSet.append('Unavailable')
+            S2Vals = [self.FirstName+' ' + self.LastName, StrSet[0],StrSet[1],StrSet[2]]
+            Sheet.Sheetlist[1].insert_row(S2Vals, S2Size + 1)
 
         #This is updating the subject list
-        Name = self.FirstName + ' ' + self.LastName
         for subject in self.Subjects:
             SheetVals=Sheet.Sheetlist[2].get_all_values()
             SubjectHeaders=Sheet.Sheetlist[2].row_values(1)
@@ -150,8 +156,6 @@ class Tutor(object):
                 Sheet.Sheetlist[2].update_cell(1,len(Sheet.Sheetlist[2].row_values(1))+1,subject)
                 Sheet.Sheetlist[2].update_cell(2,len(Sheet.Sheetlist[2].row_values(1)),Name)
 
-                # for i in range(len(Sheet.Sheetlist[2].col_values(subjectLocationCol))):
-                #     Sheet.Sheetlist[2].cell(i,subjectLocationCol)
 
 
 class Tutors(object):
