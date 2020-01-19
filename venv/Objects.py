@@ -238,7 +238,6 @@ class Student(object):
             Vals=[Name,self.Grade,self.Birthday]
             Sheet.Sheetlist[0].append_row(Vals)
 
-
 def loadStudent(FirstName,LastName):
     Name=str(FirstName + ' '+ LastName)
     FullDir=StudentDir+Name
@@ -335,4 +334,22 @@ def hourConversion(Val):
     else:
         Str=StrTemp
         return Str
+
+
+def Clear_Sheet(Sheet):
+    ColVals=Sheet.col_values(1)
+    EmptyIdx=[]
+    for i in range(ColVals):
+        if ColVals[i]=='':
+            EmptyIdx.append(int(i))
+    for i in range(EmptyIdx):
+        for e in range(Sheet.row_values(i+1)):
+            if Sheet.row_values(i+1)[e]!='':
+                del EmptyIdx[i]
+    for i in range(EmptyIdx):
+        Sheet.delete_row(i + 1)
+        DeletedRows = EmptyIdx
+    return DeletedRows
+
+
 

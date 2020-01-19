@@ -8,16 +8,13 @@ client=gspread.authorize(creds)
 
 sheet=client.open("Tutor Sheet").get_worksheet(2)
 test=sheet.get_all_values()
-print(test[0][0])
-ColumnNumber=len(test[0])
-print(ColumnNumber)
-print(test[1:][1])
-loc=test[0].index('Writing')
-print(loc)
-headers=sheet.row_values(1)
-print(headers)
-print(headers.index('General Math'))
-sheet.up
+print(test)
+print(test[1])
+print(test[2])
+#print(test[2].index(''))
+print(str(test[2][7]))
+print(test[2][7])
+sheet.delete_row()
 
 #test[row][column]
 

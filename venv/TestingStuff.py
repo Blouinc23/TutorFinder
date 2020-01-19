@@ -66,9 +66,9 @@ sheetstudents=ob.GoogleSheet('Student Sheet')
 Dir=ob.Directoy(Dir=os.getcwd())
 Dir.directory_test()
 Caleb=ob.loadStudent('Caleb','Shomo')
-Caleb.update_name('Micheal','Shomo')
+Caleb.update_name('Joseph','Shomo')
 Caleb.update_grade('10th')
-Caleb.update_birthday('6/26/2002')
+Caleb.update_birthday('7/01/2002')
 Caleb.update_sheet(sheetstudents)
 
 

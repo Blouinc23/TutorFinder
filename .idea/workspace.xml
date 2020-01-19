@@ -5,9 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/Googlesheetstesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Googlesheetstesting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/Objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Objects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Students/Caleb Shomo" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Students/Caleb Shomo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/TestingStuff.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/TestingStuff.py" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +48,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.TestingStuff">
+  <component name="RunManager" selected="Python.Googlesheetstesting (2)">
     <configuration name="Googlesheetstesting (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TutorFinder" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Googlesheetstesting (2)" />
         <item itemvalue="Python.TestingStuff" />
         <item itemvalue="Python.Objects" />
         <item itemvalue="Python.TestingStuff (1)" />
         <item itemvalue="Python.Objects (1)" />
-        <item itemvalue="Python.Googlesheetstesting (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578545912989</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="This is on the laptop 1/8. Made changes to subject sheet update method">
+      <created>1578547830783</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578547830783</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,7 +218,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
